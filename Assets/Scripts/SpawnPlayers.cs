@@ -15,6 +15,7 @@ public class SpawnPlayers : MonoBehaviour
             var characterIns = PhotonNetwork.Instantiate(character.name, instanciatePosition, Quaternion.identity);
             characterIns.GetComponent<CharacterControl>().enabled = true;
             characterIns.GetComponentInChildren<Camera>().enabled = true;
+            characterIns.GetComponentInChildren<AudioListener>().enabled = true;
         }
     }
 }
