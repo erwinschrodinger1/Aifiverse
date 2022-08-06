@@ -5,11 +5,11 @@ using UnityEngine.UI;
 
 public class FountainDisplayer : MonoBehaviour
 {
-    GameObject objects;
+    public GameObject objects;
     // Start is called before the first frame update
     void Start()
     {
-        objects = GameObject.Find("MainThing");
+
     }
 
     // Update is called once per frame
