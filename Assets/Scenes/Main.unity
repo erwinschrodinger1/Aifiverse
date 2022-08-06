@@ -166,6 +166,8 @@ GameObject:
   - component: {fileID: 32525911}
   - component: {fileID: 32525910}
   - component: {fileID: 32525909}
+  - component: {fileID: 32525913}
+  - component: {fileID: 32525912}
   m_Layer: 5
   m_Name: Looking
   m_TagString: Untagged
@@ -242,6 +244,41 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 32525907}
   m_CullTransparentMesh: 1
+--- !u!114 &32525912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 32525907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d24ddbdc4c85dc043aba5a6335f816f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allowTouchInput: 1
+  allowedMouseButtons: 000000000100000002000000
+  xAxis:
+    m_key: LookX
+    value: 0
+  yAxis:
+    m_key: LookY
+    value: 0
+  invertHorizontal: 0
+  invertVertical: 0
+  sensitivity: 1
+--- !u!114 &32525913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 32525907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd2b1b62768d1834a9c1821a5c04c594, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &171007245
 GameObject:
   m_ObjectHideFlags: 0

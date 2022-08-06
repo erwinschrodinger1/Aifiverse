@@ -27,8 +27,8 @@ public class CharacterControl : MonoBehaviour
     {
         if (view.IsMine)
         {
-            mouseX += Input.GetAxis("Mouse X") * 0.01f;
-            mouseY -= Input.GetAxis("Mouse Y") * 2f;
+            mouseX = SimpleInput.GetAxis("LookX") * 2f;
+            mouseY -= SimpleInput.GetAxis("LookY") * 2f;
             mouseY = Mathf.Clamp(mouseY, -90f, 90f);
             fppCamera.localRotation = Quaternion.Euler(mouseY, 0f, 0f);
             transform.Rotate(Vector3.up * mouseX);
@@ -36,7 +36,7 @@ public class CharacterControl : MonoBehaviour
             var vertical = joystick.Vertical;
             var moveDirection = transform.forward * vertical + transform.right * horizontal;
 
-            gameObject.GetComponent<Rigidbody>().AddForce(moveDirection * 0.0001f * speed, ForceMode.Impulse);
+            gameObject.GetComponent<Rigidbody>().AddForce(moveDirection * 0.0003f * speed, ForceMode.Impulse);
         }
     }
 }
