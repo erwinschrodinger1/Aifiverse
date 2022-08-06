@@ -11,7 +11,7 @@ public class SpawnPlayers : MonoBehaviour
 
         if (PhotonNetwork.IsConnectedAndReady)
         {
-            Vector3 instanciatePosition = new Vector3(-0.001824789f, 496.9587f, -0.0004212227f);
+            Vector3 instanciatePosition = new Vector3(0f, 0f, 0f);
             var characterIns = PhotonNetwork.Instantiate(character.name, instanciatePosition, Quaternion.identity);
             characterIns.GetComponent<CharacterControl>().enabled = true;
             characterIns.GetComponentInChildren<Camera>().enabled = true;
