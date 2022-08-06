@@ -129,6 +129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45fb3fade9c47ca459a296c6024faaae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TouchField: {fileID: 0}
   speed: 1000
 --- !u!114 &9031174525989365555
 MonoBehaviour:
